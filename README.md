@@ -1,2 +1,2 @@
-# customfiles
-Arquivos de configuração customizados
+# dotfiles
+My dotfiles config
