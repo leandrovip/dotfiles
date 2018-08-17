@@ -4,6 +4,10 @@ $env:LC_ALL='C.UTF-8'
 
 cd D:\Repositorio
 
+# My functions
+function repo { set-location "D:\Repositorio" }
+function viperp { set-location "D:\Repositorio\VipERP" }
+
 # Theme layout
 Import-Module PSConsoleTheme
 Set-ConsoleTheme 'Solarized Dark'
