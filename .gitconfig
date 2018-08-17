@@ -1,0 +1,37 @@
+[user]
+	name = Leandro Ferreira
+	email = leandro@vipsolucoes.com
+[color]
+	status = auto
+	branch = auto
+	interactive = auto
+	diff = auto
+[alias]
+	st = status -sb
+	cm = !git add -A && git commit -m
+	ck = checkout
+	ckb = checkout -B
+	up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+	ok = push origin
+	save = !git add -A && git commit -m 'SAVEPOINT'
+	amend = commit --amend
+	lg = log --all --graph --decorate --oneline --abbrev-commit
+	remotes = remote -v
+[merge]
+	tool = kdiff3
+[diff]
+	guitool = kdiff3
+[core]
+	autocrlf = true
+[difftool "kdiff3"]
+	path = D:/Programas/KDiff3/kdiff3.exe
+[mergetool "kdiff3"]
+	path = D:/Programas/KDiff3/kdiff3.exe
+[gui]
+	recentrepo = D:/Repositorio/NAppUpdateBR
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+
