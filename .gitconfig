@@ -15,7 +15,7 @@
 	ok = push origin
 	save = !git add -A && git commit -m 'SAVEPOINT'
 	amend = commit --amend
-	lg = log --all --graph --decorate --oneline --abbrev-commit
+	lg = log --graph --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) %C(blue)<%an>%Creset' --abbrev-commit
 	remotes = remote -v
 [merge]
 	tool = kdiff3
