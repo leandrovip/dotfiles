@@ -1,6 +1,7 @@
 [user]
 	name = Leandro Ferreira
 	email = leandro@vipsolucoes.com
+	signingkey = 93D41FD47F8CB02CF871086A0822F8F601E86E29
 [color]
 	status = auto
 	branch = auto
@@ -17,7 +18,7 @@
 	save = !git add -A && git commit -m 'SAVEPOINT'
 	restore = reset --mixed HEAD~1
 	amend = commit --amend
-	lg = log --graph --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) %C(blue)<%an>%Creset' --abbrev-commit
+	l = log --graph --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) %C(blue)<%an>%Creset' --abbrev-commit
 	remotes = remote -v
 	remove = branch -D
 	undo = reset --soft HEAD~1
@@ -32,11 +33,12 @@
 	path = D:/Programas/KDiff3/kdiff3.exe
 [mergetool "kdiff3"]
 	path = D:/Programas/KDiff3/kdiff3.exe
-[gui]
-	recentrepo = D:/Repositorio/NAppUpdateBR
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
-
+[commit]
+	gpgsign = true
+[gpg]
+	program = D:/Programas/GnuPG/bin/gpg.exe
