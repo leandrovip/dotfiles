@@ -16,7 +16,7 @@ function temp {
 }
 
 function projects {
-	Set-Location "D:\Projects"
+	Set-Location "D:\projects"
 }
 
 # Git Posh
