@@ -1,6 +1,6 @@
-# My dotfiles
+# Leandro´s dotfiles
 
-:computer:
+These are the dotfiles that i use. :computer:
 
 --------
 Other informations:
@@ -9,4 +9,4 @@ Other informations:
 set LC_ALL=C.UTF-8
 --------
 
-**Contact** - leandro@vipsolucoes.com
+**Email** - leandro@vipsolucoes.com

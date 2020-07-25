@@ -1,6 +1,6 @@
 #Profile config - User: Leandro User E-mail: leandro@vipsolucoes.com
 
-$env:LC_ALL = 'C.UTF-8'
+$env:LC_ALL='C.UTF-8'
 
 # Functions
 function viperp {
@@ -12,11 +12,11 @@ function dev {
 }
 
 function temp {
-	Set-Location "D:\temp"
+    Set-Location "D:\temp"
 }
 
 function projects {
-	Set-Location "D:\projects"
+    Set-Location "D:\projects"
 }
 
 # Git Posh

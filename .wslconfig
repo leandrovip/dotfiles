@@ -1,5 +1,5 @@
 [wsl2]
-memory=4GB                  # Make sure you have this amount available to use!
+memory=6GB                  # Make sure you have this amount available to use!
 
 # Another option is to disable swap but if the VM goes out of memory, the
 # OOM killer might start killing important processes or the VM may crash.
