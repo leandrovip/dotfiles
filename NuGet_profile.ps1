@@ -19,11 +19,19 @@ function temp-pdv
 }
 
 function script-erp {
-    update-database -ConfigurationTypeName VipERP.Data.Migrations.ERP.Configuration -Script -SourceMigration:0
+    update-database -ConfigurationTypeName VipERP.Data.Migrations.ERP.Configuration -Script -SourceMigration:'Temp'
 }
 
 function script-pdv {
-    update-database -ConfigurationTypeName VipERP.Data.Migrations.PDV.Configuration -Script -SourceMigration:0
+    update-database -ConfigurationTypeName VipERP.Data.Migrations.PDV.Configuration -Script -SourceMigration:'Temp'
+}
+
+function script-inicial-erp {
+		update-database -ConfigurationTypeName VipERP.Data.Migrations.ERP.Configuration -Script -SourceMigration:0
+}
+
+function script-inicial-pdv {
+	update-database -ConfigurationTypeName VipERP.Data.Migrations.PDV.Configuration -Script -SourceMigration:0
 }
 
 ## BACKUP ##
