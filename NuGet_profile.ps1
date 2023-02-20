@@ -19,11 +19,11 @@ function temp-pdv
 }
 
 function script-erp {
-    update-database -ConfigurationTypeName VipERP.Data.Migrations.ERP.Configuration -Script -SourceMigration:'Temp'
+    update-database -ConfigurationTypeName VipERP.Data.Migrations.ERP.Configuration -Script -TargetMigration:'Temp'
 }
 
 function script-pdv {
-    update-database -ConfigurationTypeName VipERP.Data.Migrations.PDV.Configuration -Script -SourceMigration:'Temp'
+    update-database -ConfigurationTypeName VipERP.Data.Migrations.PDV.Configuration -Script -TargetMigration:'Temp'
 }
 
 function script-inicial-erp {
@@ -32,6 +32,41 @@ function script-inicial-erp {
 
 function script-inicial-pdv {
 	update-database -ConfigurationTypeName VipERP.Data.Migrations.PDV.Configuration -Script -SourceMigration:0
+}
+
+function up-erp-force {
+		update-database -ConfigurationTypeName VipERP.Data.Migrations.ERP.Configuration -Force
+}
+
+function up-pdv-force {
+	update-database -ConfigurationTypeName VipERP.Data.Migrations.PDV.Configuration -Force
+}
+
+function remove-erp{
+    remove-bd 'viperpDevTemp'
+}
+
+function remove-pdv{
+    remove-bd 'pdvDevTemp'
+}
+
+function remove-bd {
+    param(
+        [string] $database = "viperpDevTemp"
+      )
+
+    $connectionString = "SERVER=localhost; " +
+            "Database=master; " +
+			"User Id=sa;Password=Teste12345"
+
+    $sqlCommand = "DROP DATABASE $database"
+
+    $connection = new-object system.data.SqlClient.SQLConnection($connectionString)
+    $command = new-object system.data.sqlclient.sqlcommand($sqlCommand,$connection)
+    
+    $connection.Open()
+    $command.ExecuteNonQuery()
+    $connection.Close()
 }
 
 ## BACKUP ##
