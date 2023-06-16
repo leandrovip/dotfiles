@@ -49,13 +49,40 @@
         "list": 
         [
             {
-                "backgroundImage": "D:\\Users\\Leandro\\Downloads\\nsa-background.png",
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "backgroundImage": "D:\\Users\\Leandro\\Imagens\\background-git.png",
                 "backgroundImageAlignment": "center",
                 "backgroundImageOpacity": 0.20000000000000001,
                 "backgroundImageStretchMode": "uniformToFill",
-                "colorScheme": "Moonlight II",
+                "closeOnExit": "graceful",
+                "colorScheme": "Dracula+",
+                "commandline": "D:\\Programas\\Git\\bin\\bash.exe",
                 "cursorShape": "vintage",
-                "elevate": true,
+                "experimental.retroTerminalEffect": false,
+                "font": 
+                {
+                    "face": "CaskaydiaCove Nerd Font",
+                    "weight": "medium"
+                },
+                "guid": "{6a43de7a-1237-4383-bd7f-d94ca1a72284}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "D:\\Users\\Leandro\\Imagens\\icon-bash.png",
+                "name": "Bash",
+                "padding": "10",
+                "snapOnInput": true,
+                "tabTitle": "Bash Terminal",
+                "useAcrylic": false
+            },
+            {
+                "backgroundImage": "D:\\Users\\Leandro\\Imagens\\background-git.png",
+                "backgroundImageAlignment": "center",
+                "backgroundImageOpacity": 0.20000000000000001,
+                "backgroundImageStretchMode": "uniformToFill",
+                "colorScheme": "Dracula+",
+                "commandline": "D:\\Users\\Leandro\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe",
+                "cursorShape": "vintage",
                 "experimental.retroTerminalEffect": false,
                 "font": 
                 {
@@ -75,6 +102,15 @@
                 "name": "PowerShell Admin"
             },
             {
+                "commandline": "C:\\Windows\\system32\\wsl.exe -d Ubuntu",
+                "guid": "{ddd9c09f-4855-4eac-8047-30f9fb4ba96e}",
+                "hidden": false,
+                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+                "name": "Ubuntu",
+                "startingDirectory": "/home",
+                "tabTitle": "Ubuntu WSL"
+            },
+            {
                 "font": 
                 {
                     "face": "Fira Code",
@@ -85,22 +121,16 @@
                 "name": "Prompt de comando"
             },
             {
-                "colorScheme": "Moonlight II",
-                "font": 
-                {
-                    "face": "MesloLGS NF",
-                    "weight": "medium"
-                },
-                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "guid": "{3fd30423-af07-531c-8cae-93327660e514}",
                 "hidden": false,
-                "name": "Ubuntu-20.04",
-                "source": "Windows.Terminal.Wsl"
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "guid": "{172bf8a9-7b79-5593-b7b7-dbc13e232c6b}",
                 "hidden": false,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
@@ -335,6 +365,29 @@
             "selectionBackground": "#FFFFFF",
             "white": "#C8D3F5",
             "yellow": "#FFC777"
+        },
+        {
+            "background": "#191622",
+            "black": "#000000",
+            "blue": "#BD93F9",
+            "brightBlack": "#4D4D4D",
+            "brightBlue": "#CAA9FA",
+            "brightCyan": "#AA91E3",
+            "brightGreen": "#5AF78E",
+            "brightPurple": "#FF92D0",
+            "brightRed": "#FF6E67",
+            "brightWhite": "#E6E6E6",
+            "brightYellow": "#EAF08D",
+            "cursorColor": "#F8F8F2",
+            "cyan": "#8D79BA",
+            "foreground": "#E1E1E6",
+            "green": "#50FA7B",
+            "name": "Omni",
+            "purple": "#FF79C6",
+            "red": "#FF5555",
+            "selectionBackground": "#41414D",
+            "white": "#BFBFBF",
+            "yellow": "#EFFA78"
         },
         {
             "background": "#1E2127",

@@ -1,0 +1,57 @@
+[user]
+	name = Leandro Ferreira
+	email = leandro@vipsolucoes.com
+	signingkey = 93D41FD47F8CB02CF871086A0822F8F601E86E29
+[color]
+	status = auto
+	branch = auto
+	interactive = auto
+	diff = auto
+[alias]
+	ec = config --global -e
+	st = status -sb
+	cm = !git add -A && git commit -m
+	ck = checkout
+	ckb = checkout -B
+	up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+	ok = push origin
+	save = !git add -A && git commit -m 'SAVEPOINT'
+	restore = reset --mixed HEAD~1
+	amend = commit --amend
+	l = log --graph --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim cyan)(%cr) %C(yellow)<%an>%Creset' --abbrev-commit
+	remotes = remote -v
+	remove = branch -D
+	undo = reset --soft HEAD~1
+	br = branch -v
+	cancel = !git add -A && git checkout --force
+[merge]
+	tool = kdiff3
+	guitool = kdiff3
+[diff]
+	guitool = kdiff3
+[core]
+	autocrlf = true
+	
+[difftool "kdiff3"]
+	path = D:/Programas/KDiff3/kdiff3.exe
+	cmd = \"\" \"$LOCAL\" \"$REMOTE\"
+[mergetool "kdiff3"]
+	path = D:/Programas/KDiff3/kdiff3.exe
+	cmd = \"\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[commit]
+	gpgsign = true
+[gpg]
+	program = C:/Program Files (x86)/gnupg/bin/gpg.exe
+[gui]
+	recentrepo = D:/dev/VipERP
+[pull]
+	rebase = false
+[fetch]
+	prune = false
+[rebase]
+	autoStash = false

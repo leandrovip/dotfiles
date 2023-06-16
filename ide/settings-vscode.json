@@ -11,59 +11,50 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "breadcrumbs.enabled": true,
   "diffEditor.codeLens": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "CaskaydiaCove Nerd Font",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
+  "editor.renderControlCharacters": false,
+  "editor.renderLineHighlight": "gutter",
   "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
   "editor.wordWrapColumn": 200,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": true,
   "files.autoSaveDelay": 2000,
   "html.format.enable": false,
   "html.format.indentHandlebars": true,
   "html.format.indentInnerHtml": true,
   "html.format.maxPreserveNewLines": 1,
   "html.format.wrapLineLength": 200,
+  "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.port": 0,
+  "material-icon-theme.folders.associations": {
+    "directives": "fastlane",
+    "domain": "home",
+    "enums": "stack",
+    "interceptors": "connection"
+  },
+  "material-icon-theme.folders.color": "#ff7043",
   "settingsSync.ignoredExtensions": [],
-  "sync.gist": "251683a92c4963a13975779a90449dc9",
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.defaultProfile.linux": "zsh (2)",
-  "terminal.integrated.profiles.linux": {
-    "bash": {
-      "icon": "terminal-bash",
-      "path": "bash"
-    },
-    "fish": {
-      "path": "fish"
-    },
-    "pwsh": {
-      "icon": "terminal-powershell",
-      "path": "pwsh"
-    },
-    "tmux": {
-      "icon": "terminal-tmux",
-      "path": "tmux"
-    },
-    "zsh": {
-      "path": "zsh"
-    },
-    "zsh (2)": {
-      "path": "/usr/bin/zsh"
-    }
-  },
-  // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-  "timeline.excludeSources": [],
+  "typescript.referencesCodeLens.enabled": false,
+  "typescript.suggest.autoImports": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescriptHero.imports.organizeOnSave": false,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Atom One Dark",
+  "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "newUntitledFile",
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.tabs.location": "left"
 }
