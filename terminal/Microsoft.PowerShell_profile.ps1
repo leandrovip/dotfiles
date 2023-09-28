@@ -21,17 +21,18 @@ function global:$name {
     $func | iex
 }
 
-function viperp { set-location "D:\dev\VipERP" }
-function sgi { set-location "D:\dev\Vip.SGI" }
-function mobile { set-location "D:\dev\VipERP.Mobile" }
-function migration { Invoke-Item "D:\dev\VipERP.Migrations\src\VipERP.Migrations\bin\Release\net6.0-windows\VipERP.Migrations.exe" }
+function viperp { set-location "E:\dev\VipERP" }
+function sgi { set-location "E:\dev\Vip.SGI" }
+function mobile { set-location "E:\dev\VipERP.Mobile" }
+function migration { Invoke-Item "E:\dev\VipERP.Migrations\src\VipERP.Migrations\bin\Release\net6.0-windows\VipERP.Migrations.exe" }
 function emul { Invoke-Item "D:\Programas\scrcpy\scrcpy-noconsole.vbs" }
 
-function dev { set-location "D:\dev" }
-function temp { Set-Location "D:\temp" }
+function dev { set-location "E:\dev" }
+function temp { Set-Location "E:\temp" }
 function exp { Invoke-Item "." }
 function la() { Get-ChildItem | Format-Wide }
 function tail { Get-Content $args -Tail 30 -Wait }
+function title { $Host.UI.RawUI.WindowTitle = "$pwd" }
 
 function take {
   New-Item -ItemType directory $args
@@ -48,13 +49,14 @@ function pushgit {
     git push --set-upstream origin $branch
 }
 
-# Git aliases
+# Custom aliases
 Add-Alias ab 'git ckb'
 Add-Alias am 'git ck master'
 Add-Alias ad 'git ck develop'
 Add-Alias au 'git up'
 Add-Alias al 'git l'
 Add-Alias as 'git st'
+Add-Alias ngs 'ng serve'
 
 # Oh-My-Posh
 oh-my-posh init pwsh --config 'D:\Users\Leandro\AppData\Local\Programs\oh-my-posh\themes\takuya.omp.json' | Invoke-Expression
