@@ -55,3 +55,7 @@
 	prune = false
 [rebase]
 	autoStash = false
+[safe]
+	directory = D:/dev/Vip.SGI/api
+	directory = D:/dev/Vip.RestClient
+	directory = E:/dev/Vip.ElginTEF
